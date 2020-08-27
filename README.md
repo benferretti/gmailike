@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hey, this is the gmail like app for thp by Benoit Ferretti. 
 
-Things you may want to cover:
+
+Go to https://appgmailike.herokuapp.com/emails/index  or http://localhost:3000/emails/index for gmail project :)
 
 * Ruby version
+2.5.1 
 
-* System dependencies
-
-* Configuration
+* Ruby version
+5.2.1 
 
 * Database creation
+rails db:create
 
 * Database initialization
+rails db:migrate
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Have fun :)
