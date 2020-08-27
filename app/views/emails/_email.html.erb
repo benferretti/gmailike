@@ -1,0 +1,13 @@
+<div class='row mx-lg-n5' id= "email-list <%= email.id %>">
+
+<% if email.read  %>
+      <div class='col py-3 px-lg-5 border'><%= link_to (email.object), email_path(:id => email.id), remote: true%></div>
+<% else  %>
+      <div class='col py-3 px-lg-5 border'><u><strong><%= link_to (email.object), email_path(:id => email.id), remote: true%></strong></u></div>
+<% end  %>
+
+<div class='col py-3 px-lg-5 border' id= "email-content <%= email.id %>"> </div>
+
+</div>
+
+

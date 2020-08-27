@@ -1,0 +1,10 @@
+  <h5><%=email.object%></h5>
+  <p class="card-text"><%=email.body%></p>
+  <button type="button" class="btn btn-light btn-sm"><%= link_to "Supprimer", email_path, method: "delete", remote: true%></button>
+  
+  <% if @email.read %>
+  <button type="button" class="text-white btn btn-sm"><%= link_to "Marquer comme non-lu", email_path, method: "put", remote: true%></button>
+  <% else %>
+  <button type="button" class="text-white btn btn-sm"><%= link_to "Marquer comme lu", email_path, method: "put", remote: true%></button>
+  <% end %>
+  </div>

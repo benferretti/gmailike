@@ -1,0 +1,4 @@
+alert("Modifier un email est exécuté!");
+document.getElementById("email-list <%= @email.id %>").innerHTML = "<div class='container px-lg-5' id='email-list'>"+"<%= j render 'email', email: @email %>";
+document.getElementById("email-content <%= @email.id %>").insertAdjacentHTML("beforeend", "<%= j render 'email_show', email: @email %>");
+

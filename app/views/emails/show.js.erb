@@ -1,0 +1,11 @@
+
+if ((document.getElementById("email-content <%= @email.id %>").innerHTML.length) === 1) {
+  alert("Afficher un email est exécuté!");
+  if ('<%=@email.read == false%>') {
+    '<%=@email.update_attribute(:read, true)%>'
+    } 
+    document.getElementById("email-list <%= @email.id %>").innerHTML = "<div class='container px-lg-5' id='email-list'>"+"<%= j render 'email', email: @email %>";
+    document.getElementById("email-content <%= @email.id %>").insertAdjacentHTML("beforeend", "<%= j render 'email_show', email: @email %>");
+} else {
+  alert("Le contenu de cet email est déjà affiché");
+}
